@@ -196,7 +196,7 @@ header {
     font-size: 2vw;
 }
 
-.about, .education, .skills, .contact {
+.about, .education, .skills, .contact, .AdminP {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 3vw;
     text-align: center;
@@ -210,6 +210,12 @@ header {
 }
 
 section i {
+    font-size: 2vw;
+    color: #4CAF50;
+    margin-bottom: 1vw;
+}
+
+div i {
     font-size: 2vw;
     color: #4CAF50;
     margin-bottom: 1vw;

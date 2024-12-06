@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AdminPanel from './components/AdminPanel';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Education />
       <Skills />
       <Contact />
+      <AdminPanel />
       <Footer />
     </div>
   );

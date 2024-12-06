@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const MessagesPanel = () => {
   const [messages, setMessages] = useState([]);
-  const [filters, setFilters] = useState({ email: '', startDate: '', endDate: '' });
+  const [filters, setFilters] = useState({ email: '', startDate: '' });
 
   const fetchMessages = async () => {
     const query = new URLSearchParams(filters).toString();
@@ -23,7 +23,8 @@ const MessagesPanel = () => {
   }, [filters]);
 
   return (
-    <div>
+    <div id="AdminP" className="AdminP">
+      <i className="fa-solid fa-message"></i>
       <h1>Messages Panel</h1>
       <div>
         <input
@@ -36,11 +37,6 @@ const MessagesPanel = () => {
           type="date"
           placeholder="Start Date"
           onChange={(e) => setFilters({ ...filters, startDate: e.target.value })}
-        />
-        <input
-          type="date"
-          placeholder="End Date"
-          onChange={(e) => setFilters({ ...filters, endDate: e.target.value })}
         />
         <button onClick={fetchMessages}>Apply Filters</button>
       </div>
